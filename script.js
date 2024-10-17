@@ -17,9 +17,9 @@ function lerLivro(idLivro, caminhoPdf) {
 
         // Ajustar a altura conforme o dispositivo
         if (window.innerWidth <= 768) {
-            iframe.style.height = '90vh'; // 90% da altura da janela no mobile
+            iframe.style.height = '90vh'; 
         } else {
-            iframe.style.height = '800px'; // Altura maior no desktop
+            iframe.style.height = '800px'; 
         }
     } else {
         iframe.style.display = 'none';
