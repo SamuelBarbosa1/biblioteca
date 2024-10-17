@@ -1,0 +1,89 @@
+/* Estilos gerais para todas as telas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+}
+
+#livros-lista {
+    margin-bottom: 40px;
+}
+
+.livro {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 20px; /* Tamanho adequado para desktop */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+iframe {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 600px; /* Altura para telas maiores */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    iframe {
+        height: 90vh; /* Ocupar quase toda a altura da tela no mobile */
+    }
+
+    header {
+        font-size: 1.5em; /* Texto menor no título */
+    }
+
+    .livro {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    iframe {
+        height: 400px; /* Reduz a altura do iframe para melhor visualização em mobile */
+    }
+}
+
+/* Ajustes para telas muito pequenas (celulares pequenos) */
+@media (max-width: 480px) {
+    iframe {
+        height: 300px; /* Altura ainda menor para celulares */
+    }
+
+    button {
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    h3 {
+        font-size: 1.2em; /* Títulos de livros menores */
+    }
+}

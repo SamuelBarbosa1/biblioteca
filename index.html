@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Minha Biblioteca</h1>
+    </header>
+
+    <main>
+        <section id="livros-lista">
+            <h2>Livros Disponíveis</h2>
+            
+            <!-- Livro 1 -->
+            <div class="livro" id="livro1">
+                <h3> A Dança das Sombras </h3>
+                <button onclick="lerLivro('livro1', 'livros/livro1.pdf')">Ler</button>
+                <a href="livros/livro1.pdf" download="Livro1.pdf">
+                    <button>Baixar</button>
+                </a>
+            </div>
+
+            <!-- Livro 2 -->
+            <div class="livro" id="livro2">
+                <h3> O Eco do Silêncio 2</h3>
+                <button onclick="lerLivro('livro2', 'livros/livro2.pdf')">Ler</button>
+                <a href="livros/livro2.pdf" download="Livro2.pdf">
+                    <button>Baixar</button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
